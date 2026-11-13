@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palabas - TV Show Search</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🎬 Palabas</h1>
+  <p>Search any TV show</p>
+  <form id="search-form">
+    <input id="search-input" type="text" placeholder="e.g. Breaking Bad, Friends..." required>
+    <button type="submit">Search</button>
+  </form>
+  <div class="mode">
+    <label><input type="radio" name="mode" value="live" checked> Live Mode (TVMaze API)</label>
+    <label><input type="radio" name="mode" value="sample"> Sample Mode (Offline)</label>
+  </div>
+  <p id="status"></p>
+</header>
+
+<main id="results"></main>
+
+<div id="modal" class="hidden">
+  <div class="modal-content">
+    <button id="close-btn">✖</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
